@@ -1,0 +1,15 @@
+header:
+#97DBAE
+rgb(151,219,174)
+
+navi:
+#C3E5AE
+rgb(195,229,174)
+
+article:
+#F1E1A6
+rgb(241,225,166)
+
+footer:
+#F4BBBB
+rgb(244,187,187)
