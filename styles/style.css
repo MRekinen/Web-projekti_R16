@@ -1,0 +1,221 @@
+#content {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 150px repeat(4,1fr);
+    grid-template-rows: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    padding-left: 10px;
+}
+
+header {
+    display: flex;
+    background-color: rgb(151,219,174);
+    grid-column: 1/6;
+    border: black 2px solid; 
+}
+
+header img {
+    float: left;
+    height: 80px;
+    margin: 10px;
+}
+
+
+.Tietosivu {
+    background-image: url("../images/");
+    background-size: cover;
+    grid-column: 1/1;
+    border: 10px solid rgb(120, 218, 235);
+}
+
+.Tietosivu:hover {
+    border-color: rgb(16, 125, 145);
+}
+
+.Annin {
+    background-image: url("../images/");
+    background-size: cover;
+    grid-column: 2/2;
+    border: 10px solid rgb(139, 110, 161);
+}
+
+.Annin:hover {
+    border-color: rgb(115, 13, 192);
+}
+
+.Jessen {
+    background-image: url("../images/");
+    background-size: cover;
+    grid-column: 3/3;
+    border: 10px solid rgb(209, 93, 145);
+}
+
+.Jessen:hover {
+    border-color: rgb(133, 17, 69);
+}
+
+.Mikaelin {
+    background-image: url("../images/");
+    background-size: cover;
+    grid-column: 4/4;
+    border: 10px solid rgb(241, 155, 115);
+}
+
+.Mikaelin:hover {
+    border-color: rgb(187, 65, 9);
+}
+
+.Paivin {
+    background-image: url("../images/fox.jpg");
+    background-size: cover;
+    grid-column: 5/5;
+    border: 10px solid rgb(190, 218, 127);
+}
+
+.Paivin:hover {
+    border-color: rgb(50, 70, 4);
+}
+
+article {
+    background-color: rgb(241,225,166)
+}
+
+.Tietosivu, .Annin, .Jessen, .Mikaelin, .Paivin {
+    color: rgb(16, 106, 223);
+    height: 200px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 10px;
+}
+
+article {
+    grid-column: 1/6;
+    padding-bottom: 15px;
+}
+
+article p {
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+}
+
+article a {
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(244,187,187);
+    grid-column: 1 / 6;
+    grid-row: 4 / 5; 
+    padding: 5px;
+    align-items: center;
+}
+
+footer div {
+    flex-grow: 5;
+    text-align: right;
+}
+
+footer img {
+    height: 80px;
+    margin: 10px;
+    filter: invert(100%);
+}
+
+header, article, footer {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+table th, td {
+    text-align: left;
+    padding-right: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        grid-row: 1/1;
+    }
+
+
+     .Tietosivu, .Annin, .Jessen, .Mikaelin, .Paivin {
+        background-image: none;
+        background-color: rgb(155, 223, 235);
+        border: 2px solid black;
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        grid-column: 2/6;
+        height: fit-content;
+    }
+
+    .Tietosivu {
+        grid-row: 2/2;
+    }
+
+    .Tietosivu:hover {
+        background-color: rgb(8, 81, 94);
+        border-color: black;
+    }
+   
+    .Annin{    
+        grid-row: 3/3;
+    }
+
+    .Annin:hover{
+        background-color: rgb(139, 110, 161);
+        border-color: rgb(115, 13, 192);
+    }
+    .Jessen {
+        grid-row: 4/4;
+    }
+
+    .Jessen:hover {
+        background-color: rgb(209, 93, 145);
+        border-color: rgb(133, 17, 69);
+    }
+
+    .Mikaelin {
+        grid-row: 5/5;
+    }
+
+    .Mikaelin:hover {
+        background-color: rgb(241, 155, 115);
+        border-color: rgb(187, 65, 9);
+    }
+
+    .Paivin {
+        grid-row: 6/6;
+    }
+
+    .Paivin:hover {
+        background-color: rgb(190, 218, 127);
+        border-color: rgb(50, 70, 4);
+    }
+    article {
+        grid-row: 7/7;
+        background-color: rgb(241,225,166)
+    }
+
+    footer {
+        grid-row: 8/8;
+    }
+    footer img {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 576px) {
+
+    .Tietosivu, .Annin, .Jessen, .Mikaelin, .Paivin, article {
+        grid-column: 1/6;
+    }
+
+}
