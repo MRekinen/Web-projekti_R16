@@ -10,8 +10,6 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-[class*="col"] {
-
 
 }
 
@@ -26,6 +24,7 @@ header{
     border-radius: 5px;
     background-color: rgb(151,219,174);
     padding: 10px;
+    align-items: center;
 }
 
 article{
