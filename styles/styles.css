@@ -1,0 +1,42 @@
+#content {
+
+    gap: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1010;
+    border: 10px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+[class*="col"] {
+
+
+}
+
+[class*="container"] {
+    background-color: rgb(195,229,174);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+header{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(151,219,174);
+    padding: 10px;
+}
+
+article{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgb(241,225,166);
+    padding: 10px;
+}
+
+footer{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(244,187,187);
+}
