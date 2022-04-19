@@ -1,0 +1,17 @@
+#cont {
+    display: table-row;
+    gap: 10px;
+    grid-template-columns: 150px repeat(4,1fr);
+    grid-template-rows: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.quiz {
+    border: 1px solid black;
+}
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+.answer {
+    border: 1px solid black;
+}
