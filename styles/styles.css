@@ -1,14 +1,4 @@
-#content {
 
-    gap: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 1010;
-    border: 10px;
-}
-
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
 
 [class*="container"] {
