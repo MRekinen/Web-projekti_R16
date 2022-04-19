@@ -1,24 +1,13 @@
-#content {
-
-    gap: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 1010;
-    border: 10px;
-}
-
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-[class*="col"] {
 
 
-}
 
 [class*="container"] {
     background-color: rgb(195,229,174);
     border: 3px solid black;
     border-radius: 5px;
+    margin: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 header{
@@ -26,6 +15,8 @@ header{
     border-radius: 5px;
     background-color: rgb(151,219,174);
     padding: 10px;
+    align-items: center;
+    margin: 1px;
 }
 
 article{
@@ -33,10 +24,13 @@ article{
     border-radius: 10px;
     background-color: rgb(241,225,166);
     padding: 10px;
+    margin: 1px;
 }
 
 footer{
     border: 3px solid black;
     border-radius: 5px;
     background-color: rgb(244,187,187);
+    padding: 10px;
+    margin: 1px;
 }
