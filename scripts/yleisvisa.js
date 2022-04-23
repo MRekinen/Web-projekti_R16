@@ -36,11 +36,11 @@ function question1() {
 		image1.className="visible"
 		//näyttää seuraavan kysymyksen
 		document.getElementById("question2").className="visible"
-		document.getElementById("kansallisHeading").innerHTML="<h1>Yleistieto</h1>"
+		document.getElementById("yleisvisaHeading").innerHTML="<h1>Yleistieto</h1>"
 	} else {
 		//printtaa "Väärin!"
 		result.innerHTML = wrong
-		document.getElementById("kansallisHeading").innerHTML="<h1>Yleistieto/h1>"
+		document.getElementById("yleisvisaHeading").innerHTML="<h1>Yleistieto/h1>"
 		//piilottaa kysymyksen
 		document.getElementById("question1").className="hidden"
 		//näyttää seuraavan kysymyksen 
