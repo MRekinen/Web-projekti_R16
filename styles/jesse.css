@@ -26,67 +26,51 @@ footer{
     padding: 10px;
     margin: 1px;
 }
-:root {
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-}
-article{
-    --hue: var(--hue-neutral);
-    padding: 0;
+
+.some{
+    background-color: rgb(241, 225, 166);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    overflow: hidden;
     margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vw;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(241,225,166);
 }
-article.correct {
-    --hue : var(--hue-correct)
+.quiz-container{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
 }
-article.wrong {
-    --hue : var(--hue-wrong)
+.quiz-header{
+    padding: 4rem;
 }
-#game{
-    width: 800px;
-    max-width: 80%;
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px 2px;
+h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
 }
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    gap: 10px;
-    margin: 20px 0;
+ul{
+    list-style-type: none;
+    padding: 0;
 }
-.btn {
-    --hue:var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+ul li label{
+    cursor: pointer;
+}
+button{
+    
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+
+button:focus{
     outline: none;
-    cursor: pointer;
-}
-.btn:hover{
-    border-color: black;
-}
-.start-btn,
-.next-btn{
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hide {
-    display: none;
 }
