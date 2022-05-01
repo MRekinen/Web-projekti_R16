@@ -1,17 +1,92 @@
-#cont {
-    display: table-row;
+
+
+
+[class*="container"] {
+    background-color: rgb(195,229,174);
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(151,219,174);
+    padding: 10px;
+    align-items: center;
+    margin: 1px;
+}
+
+footer{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(244,187,187);
+    padding: 10px;
+    margin: 1px;
+}
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+article{
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241,225,166);
+}
+article.correct {
+    --hue : var(--hue-correct)
+}
+article.wrong {
+    --hue : var(--hue-wrong)
+}
+#game{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     gap: 10px;
-    grid-template-columns: 150px repeat(4,1fr);
-    grid-template-rows: auto;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 0;
 }
-.quiz {
-    border: 1px solid black;
+.btn {
+    --hue:var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    cursor: pointer;
 }
-table {
-    border: 1px solid black;
-    width: 100%;
+.btn:hover{
+    border-color: black;
 }
-.answer {
-    border: 1px solid black;
+.start-btn,
+.next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
 }
