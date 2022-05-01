@@ -19,7 +19,7 @@ nextButton.addEventListener("click", () => {
 
 function startGame() {
     startButton.classList.add("hide")
-    shuffledQuestions = questions.sort(() => Math.random() + 0.5)
+    shuffledQuestions = questions.sort(() => Math.random()  -0.5)
     currectQuestionIndex = 0;
     questionContainerElement.classList.remove("hide")
     setnextQuestion()
