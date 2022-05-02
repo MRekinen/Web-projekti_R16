@@ -37,10 +37,14 @@ footer{
     margin: 0;
 }
 .quiz-container{
+    background-image: url(/images/Antiikin\ kreikka.jpg);
+    background-size: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
     width: 600px;
     overflow: hidden;
+    color: white;
+    
 }
 .quiz-header{
     padding: 4rem;
