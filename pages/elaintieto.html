@@ -25,29 +25,30 @@
             <h2> Valitse oikea vastaus ja klikkaa "Tarkista".</h2>
           </td>
           <td>
-          <!-- tästä alkaa bootstrapista mallista tehty navbar--> 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+<!-- bootstrapin navigointipalkki tarkista vielä toiminta-->
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand">Navigointi</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li>
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a> <!--linkki etusivulle-->
-                  </li>
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/index.html">Pääsivu</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              </div>
-            </nav>
-          <!--tähän loppuu bootstrapista noudettu components alla oleva navbar-->
+            </nav>     -->
+<!-- bootstrapin navigointipalkki päättyy-->
           </td> 
         </tr>
       </table>  
     </header>
     <button id="aloitusnappi" onclick="start()">Aloita</button>
     <p id="progress">Edistyminen:</p>
+    <!-- tarkista, lähtee täyttämään väärin -->
     <table id="progressBar">
       <tr>
         <td id="firstBlock" class="block"></td>
@@ -65,7 +66,7 @@
       <input type="radio" name="answer" class="wrong"> Kojootti<br>
       <button id="tarkista1" class="button" onclick="v1()">Tarkista</button>
       <p id="feedback1" class="feedback"></p>
-      <button id="seuraava2" onclick="next2()">Seuraava</button>       
+      <button id="seuraava2" onclick="next2()">Seuraava</button>     
     </div>     
     <div class="col-md-12 col-sm-12" id="karhu">
       <img src="../elaintietoimages/bear.jpg" class="kuva" alt="bear"><br>
