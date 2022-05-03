@@ -14,17 +14,6 @@ header {
     border-radius: 5px;
     
 }
-
-#nav {
-
-    height: 50px;
-    width: 100px;
-    background-color: rgb(244,187,187);
-    border-radius: 5px;
-    font-weight: bolder;
-
-}
-
 .kuva{
     height: 230px;
     width: 300px;
@@ -33,14 +22,15 @@ header {
     float: left;
 }
 
-[class*="col"]{
+#kettu, #karhu, #orava, #ilves, #jänis {
     display: none;
-    height: 350px;
+    height: 300px;
     margin: 10px;
     padding: 10px;
     border: 5px rgb(195,229,174) solid;
     background-color: rgb(231, 241, 149);
 } 
+
 #progress{ 
     display: none;
 }
