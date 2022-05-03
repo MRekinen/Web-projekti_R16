@@ -1,4 +1,4 @@
-// Koodin pohja kopioitu henkilöltä Saku Penttilä TIK21SP, löytyi GitHubista (Nyt alan ymmärtämään sen kuinka pirunmoisen kova homma on muokata toisen koodi sopivaksi omaan pohjaan. Oppia ikä kaikki.)
+// Koodin pohjassa hyödynnetty henkilön Saku Penttilä TIK21SP kansallisvisaa, löytyi GitHubista
 
 let questionsRight = 0
 //answers
@@ -113,8 +113,7 @@ function question5(){
 	}
     document.getElementById("correctAnswers").innerText = questionsRight
     progress.value = questionsRight
-	//vastaukset-nappi
-	document.querySelector("#vastaukset").className=""
+
 	//uudestaan-nappi
 	document.querySelector("#uudestaan").className=""
 	//jos kaikki kysymykset oikein
