@@ -1,8 +1,10 @@
 #content {
     font-family:sans-serif;
+    display: grid;
 }
 
 header {
+    grid-column: 1/6;
     display: flex;
     height: 200px;
     background-color: rgb(151,219,174);
@@ -13,11 +15,14 @@ header {
     
 }
 
-nav {
-    background-color: rgb(151,219,174);
-    height: 10px;
-    width: 10px;
-    display: flex;
+#nav {
+
+    height: 50px;
+    width: 100px;
+    background-color: rgb(244,187,187);
+    border-radius: 5px;
+    font-weight: bolder;
+
 }
 
 .kuva{
