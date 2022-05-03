@@ -31,16 +31,22 @@ header {
     background-color: rgb(231, 241, 149);
 } 
 
-#progress{ 
+/* #progress{ 
     display: none;
 }
 
-#progressBar{
+  #myBar {
+    width: 1%;
     height: 30px;
-    width: 250px;
-    border: solid black 1px;
-    border-radius: 3px;
+    background-color: #04AA6D;
+  }
+#progressBar{
     display: none;
+    margin-left: 20px;
+    width: 100px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
 .block {
@@ -49,7 +55,7 @@ header {
     background-color: aquamarine;
     border-radius: 3px;
     display: none;
-}
+} */
 
 #aloitusnappi, #seuraava1, #seuraava2, #seuraava3, 
 #seuraava4, #seuraava5,.button, #uudestaan, #tulos{

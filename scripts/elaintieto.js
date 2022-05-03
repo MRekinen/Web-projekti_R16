@@ -5,7 +5,7 @@ const OIKEA3 = "Oikea vastaus, hyvä! Orava kiipeilee puunrungolla taitavasti. S
 const OIKEA4 = "Oikea vastaus, hyvä! Ilves on yksi laajimmalle levinneistä kissaeläimistä. "
 const OIKEA5 = "Oikea vastaus, hyvä! Tiesitkö, että jäniksiä on maailmassa 11 sukua ja jäniksiin kuuluvia lajeja on 61! "
 const VÄÄRÄ = "Väärä vastaus, harmi! Kokeile uudelleen."
-const PUUTTUU = "Vastaus puuttuu, kirjoita vastaus kuvan alla olevaan kenttään."
+//const PUUTTUU = "Vastaus puuttuu, kirjoita vastaus kuvan alla olevaan kenttään."
 
 
 // vastaukset ja oikea/väärä
@@ -22,6 +22,7 @@ let feedback2 = document.getElementById("feedback2");
 let feedback3 = document.getElementById("feedback3");
 let feedback4 = document.getElementById("feedback4");
 let feedback5 = document.getElementById("feedback5");
+
 
 //alotusnäpäimen toiminta
 function start() {
@@ -41,6 +42,7 @@ function v1(){
         document.getElementById("progressBar").style.display = "block";
         document.getElementById("firstBlock").style.display = "block";
         document.getElementById("progress").style.display = "block";
+        document.getElementById("progressBar").value = +1;
     }
     else {feedback1.textContent = VÄÄRÄ;}
 
@@ -57,6 +59,7 @@ function v2(){
         document.getElementById("seuraava3").style.display = "block";
         document.getElementById("tarkista2").style.display = "none";
         document.getElementById("secondBlock").style.display = "block";
+        document.getElementById("progressBar").value += 1;
     }
     else {feedback2.textContent = VÄÄRÄ;}
 
