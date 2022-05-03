@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS ends-->
+    <link rel="stylesheet" href="elaintieto.css">
+    <script src="elaintieto.js" defer></script>
+    <title>Eläintieto</title>
+  </head>
+  <body>
+    <header id="header">
+        <table>
+            <tr>
+                <td>
+                    <h1>Mikä eläin on kuvassa?</h1> 
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <h2> Valitse oikea vastaus ja klikkaa "Tarkista".</h2>
+                </td>
+                <td>
+                  <!-- tästä alkaa bootstrapista mallista tehty navbar--> 
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a> <!--linkki etusivulle-->
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <!--tähän loppuu bootstrapista noudettu components alla oleva navbar-->
+                </td> 
+              </tr>
+          </table>  
+    </header>
+      <button id="aloitusnappi" onclick="start()">Aloita</button>
+      <p id="progress">Edistyminen:</p>
+      <table id="progressBar">
+        <tr>
+          <td id="firstBlock" class="block"></td>
+          <td id="secondBlock" class="block"></td>          
+          <td id="thirdBlock" class="block" ></td>
+          <td id="fourthBlock" class="block"></td>
+          <td id="fifthBlock" class="block"></td>     
+        </tr>
+      </table>
+        <div class="col-md-12 col-sm-12" id="kettu"> 
+          <img src="./elaintietoimages/fox.jpg" class="kuva" alt="fox">        
+          <input type="radio" name="answer" class="wrong"> Kissa<br>
+          <input type="radio" name="answer" id="right1"> Kettu<br>
+          <input type="radio" name="answer" class="wrong"> Ahma<br>
+          <input type="radio" name="answer" class="wrong"> Kojootti<br>
+          <button id="tarkista1" class="button" onclick="v1()">Tarkista</button>
+          <p id="feedback1" class="feedback"></p>
+          <button id="seuraava2" onclick="next2()">Seuraava</button>       
+        </div> 
+
+        <div class="col-md-12 col-sm-12" id="karhu">
+            <img src="./elaintietoimages/bear.jpg" class="kuva" alt="bear"><br>
+            <input type="radio" name="answer"  class="wrong"> Ahma<br>
+            <input type="radio" name="answer"  class="wrong"> Panda<br>
+            <input type="radio" name="answer"  class="wrong"> Kissa<br>
+            <input type="radio" name="answer" id="right2"> Karhu<br>
+            <button id="tarkista2" class="button" onclick="v2()">Tarkista</button>
+            <p id="feedback2" class="feedback"></p>
+            <button id="seuraava3" onclick="next3()">Seuraava</button>
+        </div>    
+
+        <div class="col-md-12 col-sm-12" id="orava" > 
+            <img src="./elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel"><br>
+            <input type="radio" name="answer" class="wrong"> Marsu<br>
+            <input type="radio" name="answer" class="wrong"> Norsu<br>
+            <input type="radio" name="answer" id="right3"> Orava<br>
+            <input type="radio" name="answer" class="wrong"> Kojootti<br>
+            <button id="tarkista3" class="button" onclick="v3()">Tarkista</button> 
+            <p id="feedback3" class="feedback"></p>
+            <button id="seuraava4" onclick="next4()">Seuraava</button>
+        </div>     
+
+        <div class="col-md-12 col-sm-12" id="ilves">
+            <img src="./elaintietoimages/lynx.jpg"   class="kuva" alt="lynx"><br>
+            <input type="radio" name="answer" class="wrong"> Pantteri<br>
+            <input type="radio" name="answer" id="right4"> Ilves<br>
+            <input type="radio" name="answer" class="wrong"> Kani<br>
+            <input type="radio" name="answer" class="wrong"> Kettu<br>
+            <button id="tarkista4" class="button" onclick="v4()">Tarkista</button>
+            <p id="feedback4" class="feedback"></p>
+            <button id="seuraava5" onclick="next5()">Seuraava</button>
+        </div>
+
+        <div class="col-md-12 col-sm-12" id="jänis" >
+            <img src="./elaintietoimages/hare.jpg"  class="kuva" alt="hare"><br>
+            <input type="radio" name="answer" id="right5"> Jänis<br>
+            <input type="radio" name="answer" class="wrong"> Hiiri<br>
+            <input type="radio" name="answer" class="wrong"> Villisika<br>
+            <input type="radio" name="answer" class="wrong"> Mursu<br>
+            <button id="tarkista5" class="button" onclick="v5()">Tarkista</button>
+            <p id="feedback5" class="feedback"></p>
+            <button id="tulos" class="tulos" onclick="again()">Katso tulos</button>
+        </div>  
+
+        <div class="col-md-12 col-sm-12" id="prize" >
+                <img src="./elaintietoimages/bear.jpg" class="kuva" alt="bear">
+                <img src="./elaintietoimages/lynx.jpg"   class="kuva" alt="lynx">
+                <img src="./elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel">
+                <p id="feedbackEnd"> Hienoa! Sait kaikki oikein.</p>
+                <button id="uudestaan" class="uudestaan" onclick="again()">Aloita alusta</button>
+        </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
+  </body>
+</html>

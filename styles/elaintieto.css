@@ -1,0 +1,74 @@
+#content {
+    font-family:sans-serif;
+}
+
+header {
+    display: flex;
+    height: 200px;
+    background-color: rgb(151,219,174);
+    border: black 2px solid; 
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    
+}
+
+nav {
+    background-color: rgb(151,219,174);
+    height: 10px;
+    width: 10px;
+    display: flex;
+}
+
+.kuva{
+    height: 230px;
+    width: 300px;
+    border: 2px solid rgb(151,219,174);
+    margin: 10px;
+    float: left;
+}
+
+[class*="col"]{
+    display: none;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 5px rgb(195,229,174) solid;
+    background-color: rgb(231, 241, 149);
+} 
+#progress{ 
+    display: none;
+}
+
+#progressBar{
+    height: 30px;
+    width: 250px;
+    border: solid black 1px;
+    border-radius: 3px;
+    display: none;
+}
+
+.block {
+    height: 28px;
+    width: 48px;
+    background-color: aquamarine;
+    border-radius: 3px;
+    display: none;
+}
+
+#aloitusnappi, #seuraava1, #seuraava2, #seuraava3, 
+#seuraava4, #seuraava5,.button, #uudestaan, #tulos{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(244,187,187);
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.feedback {
+    padding-left: 50px;
+}
+
+#prize {
+    display: none;
+}
