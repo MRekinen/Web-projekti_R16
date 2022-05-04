@@ -29,7 +29,7 @@ footer {
 }
 
 .some {
-    background-image: url(/images/seinä.jpg);
+    background-image: url(../images/seinä.jpg);
     background-size: auto;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ footer {
 }
 
 .quiz-container {
-    background-image: url(/images/Antiikin\ kreikka.jpg);
+    background-image: url(../images/Antiikin\ kreikka.jpg);
     background-size: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
