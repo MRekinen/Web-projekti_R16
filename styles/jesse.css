@@ -1,8 +1,5 @@
-
-
-
 [class*="container"] {
-    background-color: rgb(195,229,174);
+    background-color: rgb(195, 229, 174);
     border: 3px solid black;
     border-radius: 5px;
     margin: 1px;
@@ -10,25 +7,28 @@
     margin-bottom: 0px;
 }
 
-header{
+header {
     border: 3px solid black;
     border-radius: 5px;
-    background-color: rgb(151,219,174);
+    background-color: rgb(151, 219, 174);
     padding: 10px;
     align-items: center;
     margin: 1px;
 }
 
-footer{
+footer {
     border: 3px solid black;
     border-radius: 5px;
-    background-color: rgb(244,187,187);
+    background-color: rgb(244, 187, 187);
     padding: 5px;
     margin: 1px;
-
 }
 
-.some{
+.btn-group {
+    width: 100%;
+}
+
+.some {
     background-image: url(/images/seinä.jpg);
     background-size: auto;
     display: flex;
@@ -38,7 +38,8 @@ footer{
     overflow: hidden;
     margin: 0;
 }
-.quiz-container{
+
+.quiz-container {
     background-image: url(/images/Antiikin\ kreikka.jpg);
     background-size: auto;
     border-radius: 10px;
@@ -46,31 +47,38 @@ footer{
     width: 600px;
     overflow: hidden;
     color: white;
-    
-    
-    
+
+
+
+
 }
-.quiz-header{
+
+.quiz-header {
     padding: 4rem;
 }
-h2{
+
+h2 {
     padding: 1rem;
     text-align: center;
     margin: 0;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
 }
-ul li{
+
+ul li {
     font-size: 1.2rem;
     margin: 1rem 0;
 }
-ul li label{
+
+ul li label {
     cursor: pointer;
 }
-button{
-    
+
+button {
+
     border: none;
     display: block;
     width: 100%;
@@ -79,6 +87,16 @@ button{
     padding: 1.3rem;
 }
 
-button:focus{
+button:focus {
     outline: none;
+}
+@media (max-width: 700px) {
+    .quiz-container{
+        display: flex;
+        
+    }
+    header{
+        height: stretch;
+        
+    }
 }
