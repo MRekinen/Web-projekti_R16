@@ -1,3 +1,5 @@
+//kysymykset
+
 const quizData = [
     {
         question: "Antiikin ajaksi kutsutaan... 1/5",
@@ -35,6 +37,7 @@ const quizData = [
         correct: "c",
     },
 ]
+//luetaan arvot
 
 const quiz = document.getElementById("quiz")
 const answerEls = document.querySelectorAll(".answer")
@@ -65,6 +68,7 @@ function loadQuiz() {
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
+//katsotaan mitä on vastattu
 
 function getSelected() {
     let answer
@@ -75,6 +79,7 @@ function getSelected() {
     })
     return answer
 }
+//katsotaan onko vastaus oikein ja lisätään pisteitä jos on ja kuinka moneen kysymykseen on vastattu oikein
 
 submitBtn.addEventListener("click", () => {
     const answer = getSelected()
