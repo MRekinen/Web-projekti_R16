@@ -1,40 +1,43 @@
+//kysymykset
+
 const quizData = [
     {
-        question: "Antiikin ajaksi kutsutaan...",
+        question: "Antiikin ajaksi kutsutaan... 1/5",
         a: "Muinaisen Egyptin valtakunnan aikaa.",
         b: "Muinaisen Kreikan ja Rooman valtakunnan aikaa.",
         c: "Ötzin löytymisen aikaa.",
         correct: "b",
     },
     {
-        question: "Antiikin ajanjakso kesti...",
+        question: "Antiikin ajanjakso kesti... 2/5",
         a: "13 vuotta.",
         b: "130 vuotta.",
         c: "1300 vuotta.",
         correct: "c",
     },
     {
-        question: "Antiikin aika päättyi, kun...",
+        question: "Antiikin aika päättyi, kun... 3/5",
         a: "Länsi-Rooma tuhoutui.",
         b: "Kirjoitustaito keksittiin.",
         c: "Hieroglyfien arvoitus ratkaistiin.",
         correct: "a",
     },
     {
-        question: "Demokratia tarkoittaa sitä, että kansalaiset...",
+        question: "Demokratia tarkoittaa sitä, että kansalaiset... 4/5",
         a: "Päättävät yhteisistä asioista.",
         b: "Valitsevat kuninkaan.",
         c: "Viljelevät maata.",
         correct: "a",
     },
     {
-        question: "Antiikin aika näkyy meidän aikanamme...",
+        question: "Antiikin aika näkyy meidän aikanamme... 5/5",
         a: "Ruokakulttuurissa.",
         b: "Terveydenhuollossa.",
         c: "Rakennustyylissä.",
         correct: "c",
     },
 ]
+//luetaan arvot
 
 const quiz = document.getElementById("quiz")
 const answerEls = document.querySelectorAll(".answer")
@@ -65,6 +68,7 @@ function loadQuiz() {
 function deselectAnswers() {
     answerEls.forEach(answerEl => answerEl.checked = false)
 }
+//katsotaan mitä on vastattu
 
 function getSelected() {
     let answer
@@ -75,6 +79,7 @@ function getSelected() {
     })
     return answer
 }
+//katsotaan onko vastaus oikein ja lisätään pisteitä jos on ja kuinka moneen kysymykseen on vastattu oikein
 
 submitBtn.addEventListener("click", () => {
     const answer = getSelected()
