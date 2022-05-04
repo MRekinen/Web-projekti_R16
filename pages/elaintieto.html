@@ -12,8 +12,11 @@
     <script src="../scripts/elaintieto.js" defer></script>
     <title>Eläintieto</title>
   </head>
+
   <body>
-    <!-- Navigointipalkki -->
+    <!-- common header with main page below -->
+    <header><img src="/images/header.png" alt="header"></header>
+    <!-- Navigation from bootstrap-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand">Navigointi</a>
@@ -41,12 +44,12 @@
               <a class="nav-link" href="tietoja.html">Tietoja</a>
             </li>
           </ul>
-          
         </div>
       </div>
     </nav>
-    <!-- Navigointipalkki päättyy-->
-    <header id="header">
+    <!-- Navigation ends-->
+    <!-- my own header starts -->
+    <article id="header">
       <table>
         <tr>
           <td>
@@ -57,10 +60,11 @@
           <td>
             <h2> Valitse oikea vastaus ja klikkaa "Tarkista".</h2>
           </td>
+          <td><button id="aloitusnappi" onclick="start()">Aloita tästä</button> </td>
         </tr>
       </table>  
-    </header>
-    <button id="aloitusnappi" onclick="start()">Aloita</button> 
+    </article>
+    <!-- questions-blocks below-->
     <div class="col-md-12 col-sm-12" id="kettu"> 
       <img src="../elaintietoimages/fox.jpg" class="kuva" alt="fox">        
       <input type="radio" name="answer" class="wrong"> Kissa<br>
@@ -71,6 +75,7 @@
       <p id="feedback1" class="feedback"></p>
       <button id="seuraava2" onclick="next2()">Seuraava</button>     
     </div>     
+
     <div class="col-md-12 col-sm-12" id="karhu">
       <img src="../elaintietoimages/bear.jpg" class="kuva" alt="bear"><br>
       <input type="radio" name="answer"  class="wrong"> Ahma<br>
@@ -81,6 +86,7 @@
       <p id="feedback2" class="feedback"></p>
       <button id="seuraava3" onclick="next3()">Seuraava</button>
     </div>
+
     <div class="col-md-12 col-sm-12" id="orava" > 
       <img src="../elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel"><br>
       <input type="radio" name="answer" class="wrong"> Marsu<br>
@@ -90,7 +96,8 @@
       <button id="tarkista3" class="button" onclick="v3()">Tarkista</button> 
       <p id="feedback3" class="feedback"></p>
       <button id="seuraava4" onclick="next4()">Seuraava</button>
-    </div>         
+    </div>    
+
     <div class="col-md-12 col-sm-12" id="ilves">
       <img src="../elaintietoimages/lynx.jpg"   class="kuva" alt="lynx"><br>
       <input type="radio" name="answer" class="wrong"> Pantteri<br>
@@ -101,6 +108,7 @@
       <p id="feedback4" class="feedback"></p>
       <button id="seuraava5" onclick="next5()">Seuraava</button>
     </div>
+
     <div class="col-md-12 col-sm-12" id="jänis" >
       <img src="../elaintietoimages/hare.jpg"  class="kuva" alt="hare"><br>
       <input type="radio" name="answer" id="right5"> Jänis<br>
@@ -110,19 +118,25 @@
       <button id="tarkista5" class="button" onclick="v5()">Tarkista</button>
       <p id="feedback5" class="feedback"></p>
       <button id="tulos" class="tulos" onclick="again()">Katso tulos</button>
-    </div>             
+    </div>   
+
     <div class="col-md-12 col-sm-12" id="prize" >
+      <p id="feedbackEnd"> Hienoa! Sait kaikki oikein.</p>
+      <button id="uudestaan" class="uudestaan" onclick="again()">Aloita alusta</button>
       <img src="../elaintietoimages/bear.jpg" class="kuva" alt="bear">
       <img src="../elaintietoimages/lynx.jpg"   class="kuva" alt="lynx">
       <img src="../elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel">
-      <p id="feedbackEnd"> Hienoa! Sait kaikki oikein.</p>
-      <button id="uudestaan" class="uudestaan" onclick="again()">Aloita alusta</button>
+      
     </div>   
-    <!-- alla w3schools edistymispalkki -->
-    <!-- <label for="progressBar" id="progress">Edistyminen:</label>
-    <div id="progressBar"></div>  -->
-
-
+    
+    <!-- bootstrap progress-bar below -->
+    <div class="col-md-6 col-lg" id="progressinfo">
+      <p class="progress" id="progressLabel">Edistyminen:
+        <span id="answersOk"></span>/5
+      </p>
+      <progress class="progress" id="progressBar" value="" max="5"></progress>
+    </div>
+    <!-- bootstrap script below-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
     crossorigin="anonymous">
     </script>     
