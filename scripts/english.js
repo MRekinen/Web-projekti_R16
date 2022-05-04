@@ -1,5 +1,5 @@
 //Koodin alkuperä: https://www.codingninjas.com/blog/2020/11/03/how-to-create-a-quiz-in-javascript/
-//Muokkaukset alkuperäiseen koodiin (c) Anni Tonttila
+//Muokkaukset koodiin (c) Anni Tonttila
 
 
 //Elementtien vakiointi
@@ -28,28 +28,28 @@ let questions = [{
                 answer: false
             },
             {
+                option: "Lingonberry",
+                aswer: false
+            },
+            {
                 option: "Strawberry",
                 answer: true
             },
-            {
-                option: "Lingonberry",
-                aswer: false
-            }
         ]
     },
     {
         question: "2. 'Elephant', on suomeksi:",
         answers: [{
+                option: "Norsu",
+                answer: true
+            },
+            {
                 option: "Ilves",
                 answer: false
             },
             {
                 option: "Kettu",
                 answer: false
-            },
-            {
-                option: "Norsu",
-                answer: true
             },
         ]
     },
@@ -60,11 +60,11 @@ let questions = [{
                 answer: true
             },
             {
-                option: "Kypros",
+                option: "Kroatia",
                 answer: false
             },
             {
-                option: "Kroatia",
+                option: "Kypros",
                 answer: false
             },
         ]
@@ -88,16 +88,16 @@ let questions = [{
     {
         question: " 5. Mikä seuraavista tarkoittaa englanniksi lomaa?",
         answers: [{
+                option: "Holiday",
+                answer: true
+            },
+            {
                 option: "Friday",
                 answer: false
             },
             {
                 option: "Mayday",
                 answer: false
-            },
-            {
-                option: "Holiday",
-                answer: true
             },
         ]
     }

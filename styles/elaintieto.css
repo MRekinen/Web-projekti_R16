@@ -1,79 +1,97 @@
+/*content style*/
 #content {
     font-family:sans-serif;
-    display: grid;
 }
-
-header {
-    grid-column: 1/6;
-    display: flex;
-    height: 200px;
+/* main navi style */
+[class*="container"] {
+    background-color: rgb(195,229,174);
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* main header style */
+header{
+    border: 3px solid black;
+    border-radius: 5px;
     background-color: rgb(151,219,174);
-    border: black 2px solid; 
     padding: 10px;
-    margin: 3px;
-    border-radius: 5px;
-    
+    align-items: center;
+    margin: 1px;
+} 
+/* my own header style */
+article { 
+    display: flex;
+    height: 150px;
+    background-color: rgb(231, 241, 149);
+    padding: 10px;
+    border: black 3px solid; 
+    border-radius: 5px;    
 }
-
-#nav {
-
-    height: 50px;
-    width: 100px;
-    background-color: rgb(244,187,187);
-    border-radius: 5px;
-    font-weight: bolder;
-
-}
-
+/* pictures style */
 .kuva{
     height: 230px;
     width: 300px;
     border: 2px solid rgb(151,219,174);
-    margin: 10px;
+    margin: 5px;
     float: left;
 }
-
-[class*="col"]{
+/* question blocks'style */
+#kettu, #karhu, #orava, #ilves, #jänis, #prize {
     display: none;
     height: 350px;
-    margin: 10px;
+    margin: 1px;
     padding: 10px;
-    border: 5px rgb(195,229,174) solid;
+    border: 3px black solid;
     background-color: rgb(231, 241, 149);
+    border-radius: 5px;
+    align-items: center;
 } 
-#progress{ 
-    display: none;
+/* feedbacks after every question, text slots' style */
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-
-#progressBar{
-    height: 30px;
-    width: 250px;
-    border: solid black 1px;
-    border-radius: 3px;
+/* progress-bar label's style */
+.progress{ 
     display: none;
+    font-weight: bold;
+    background-color: rgb(244,187,187);
+    margin: 10px;
 }
-
-.block {
-    height: 28px;
-    width: 48px;
-    background-color: aquamarine;
-    border-radius: 3px;
-    display: none;
-}
-
+/*several buttons' styles*/
 #aloitusnappi, #seuraava1, #seuraava2, #seuraava3, 
-#seuraava4, #seuraava5,.button, #uudestaan, #tulos{
+#seuraava4, #seuraava5, .button, #uudestaan, #tulos {
     height: 50px;
     width: 100px;
     background-color: rgb(244,187,187);
     border-radius: 5px;
     font-weight: bolder;
+    margin-top: 5px;
 }
-
-.feedback {
-    padding-left: 50px;
+/*unique button styles*/
+#aloitusnappi{
+    margin-left: 30px;
+    padding: 2px;
 }
-
+/*prize block styles*/
 #prize {
     display: none;
+}
+/*final feedback styles*/
+#feedbackEnd{
+    font-size: 30px;
+    text-align:center;
+    text-transform: uppercase;
+    color: green;
+    background-color: rgb(231, 241, 149);
+}
+/*main footer styles*/
+footer{
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(244,187,187);
+    padding: 10px;
+    margin: 1px;
 }
