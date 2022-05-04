@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Bootstrap CSS ends-->
     <link rel="stylesheet" href="../styles/elaintieto.css">
     <script src="../scripts/elaintieto.js" defer></script>
     <title>Eläintieto</title>
-  </head>
+  </head>    
 
   <body>
     <!-- common header with main page below -->
-    <header><img src="/images/header.png" alt="header"></header>
+    <header><img src="/images/elaintieto_logo.png" alt="header"></header>
     <!-- Navigation from bootstrap-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -28,7 +28,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="../index.html">Pääsivu</a>
               <li class="nav-item">
-                  <a class="nav-link" href="english.html">Anni</a>
+                  <a class="nav-link" href="english.html">English test</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Jesse.html">Historiavisa</a>
@@ -37,7 +37,7 @@
                   <a class="nav-link" href="yleisvisa.html">Yleisvisa</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="elaintieto.html">Tunnista eläimiä</a>
+                  <a class="nav-link" href="elaintieto.html">Eläintieto</a>
                 </li>
             </li>
             <li class="nav-item">
@@ -48,7 +48,7 @@
       </div>
     </nav>
     <!-- Navigation ends-->
-    <!-- my own header starts -->
+    <!-- my own "header" starts -->
     <article id="header">
       <table>
         <tr>
@@ -58,15 +58,19 @@
         </tr>
         <tr>
           <td>
-            <h2> Valitse oikea vastaus ja klikkaa "Tarkista".</h2>
+            <h2> Valitse oikea vastaus ja klikkaa "Tarkista"</h2>
           </td>
-          <td><button id="aloitusnappi" onclick="start()">Aloita tästä</button> </td>
+          <td><button id="aloitusnappi" onclick="start()">Aloita tästä</button> 
+          </td>
         </tr>
       </table>  
     </article>
     <!-- questions-blocks below-->
     <div class="col-md-12 col-sm-12" id="kettu"> 
-      <img src="../elaintietoimages/fox.jpg" class="kuva" alt="fox">        
+      <a href="https://pixabay.com/fi/photos/kettu-mets%c3%a4-luonne-el%c3%a4in-nis%c3%a4k%c3%a4s-7107267/" target="picture">
+      <img src="../elaintietoimages/fox.jpg" class="kuva" alt="fox">
+      </a> <!-- <img src="../elaintietoimages/fox.jpg" class="kuva" alt="fox"> this was the fox picture, 
+      replaced with the sentence above to give a link to the original. Same added to other question blocks.-->
       <input type="radio" name="answer" class="wrong"> Kissa<br>
       <input type="radio" name="answer" id="right1"> Kettu<br>
       <input type="radio" name="answer" class="wrong"> Ahma<br>
@@ -75,9 +79,10 @@
       <p id="feedback1" class="feedback"></p>
       <button id="seuraava2" onclick="next2()">Seuraava</button>     
     </div>     
-
     <div class="col-md-12 col-sm-12" id="karhu">
-      <img src="../elaintietoimages/bear.jpg" class="kuva" alt="bear"><br>
+      <a href="https://pixabay.com/fi/photos/karhu-villi-luonne-er%c3%a4maa-el%c3%a4imet-4838870/" target="picture">
+      <img src="../elaintietoimages/bear.jpg" class="kuva" alt="bear">
+      </a>
       <input type="radio" name="answer"  class="wrong"> Ahma<br>
       <input type="radio" name="answer"  class="wrong"> Panda<br>
       <input type="radio" name="answer"  class="wrong"> Kissa<br>
@@ -86,9 +91,10 @@
       <p id="feedback2" class="feedback"></p>
       <button id="seuraava3" onclick="next3()">Seuraava</button>
     </div>
-
     <div class="col-md-12 col-sm-12" id="orava" > 
-      <img src="../elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel"><br>
+      <a href="https://pixabay.com/fi/photos/punainen-orava-jyrsij%c3%a4-el%c3%a4in-orava-570936/" target="picture">
+      <img src="../elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel">
+      </a>
       <input type="radio" name="answer" class="wrong"> Marsu<br>
       <input type="radio" name="answer" class="wrong"> Norsu<br>
       <input type="radio" name="answer" id="right3"> Orava<br>
@@ -97,9 +103,10 @@
       <p id="feedback3" class="feedback"></p>
       <button id="seuraava4" onclick="next4()">Seuraava</button>
     </div>    
-
     <div class="col-md-12 col-sm-12" id="ilves">
-      <img src="../elaintietoimages/lynx.jpg"   class="kuva" alt="lynx"><br>
+      <a href="https://pixabay.com/fi/photos/ilves-el%c3%a4in-iso-kissa-nis%c3%a4k%c3%a4s-6614526/" target="picture">
+      <img src="../elaintietoimages/lynx.jpg"   class="kuva" alt="lynx">
+      </a>
       <input type="radio" name="answer" class="wrong"> Pantteri<br>
       <input type="radio" name="answer" id="right4"> Ilves<br>
       <input type="radio" name="answer" class="wrong"> Kani<br>
@@ -108,9 +115,10 @@
       <p id="feedback4" class="feedback"></p>
       <button id="seuraava5" onclick="next5()">Seuraava</button>
     </div>
-
     <div class="col-md-12 col-sm-12" id="jänis" >
-      <img src="../elaintietoimages/hare.jpg"  class="kuva" alt="hare"><br>
+      <a href="https://pixabay.com/fi/photos/nuori-j%c3%a4nis-j%c3%a4niksenpoika-j%c3%a4nis-5374701/" target="picture">
+      <img src="../elaintietoimages/hare.jpg"  class="kuva" alt="hare">
+      </a>
       <input type="radio" name="answer" id="right5"> Jänis<br>
       <input type="radio" name="answer" class="wrong"> Hiiri<br>
       <input type="radio" name="answer" class="wrong"> Villisika<br>
@@ -119,26 +127,30 @@
       <p id="feedback5" class="feedback"></p>
       <button id="tulos" class="tulos" onclick="again()">Katso tulos</button>
     </div>   
-
     <div class="col-md-12 col-sm-12" id="prize" >
-      <p id="feedbackEnd"> Hienoa! Sait kaikki oikein.</p>
+      <p id="feedbackEnd"> Hienoa! Sait kaikki oikein!</p>
       <button id="uudestaan" class="uudestaan" onclick="again()">Aloita alusta</button>
-      <img src="../elaintietoimages/bear.jpg" class="kuva" alt="bear">
-      <img src="../elaintietoimages/lynx.jpg"   class="kuva" alt="lynx">
-      <img src="../elaintietoimages/squirrel.jpg" class="kuva" alt="squirrel">
-      
-    </div>   
-    
+      <a href="https://pixabay.com/fi/photos/joutsen-lintu-lento-lent%c3%a4minen-6980714/" target="picture">
+      <img src="../elaintietoimages/swan.jpg" class="kuva" alt="swan">  
+      </a>  
+    </div>      
     <!-- bootstrap progress-bar below -->
     <div class="col-md-6 col-lg" id="progressinfo">
-      <p class="progress" id="progressLabel">Edistyminen:
-        <span id="answersOk"></span>/5
-      </p>
-      <progress class="progress" id="progressBar" value="" max="5"></progress>
+      <p class="progress" id="progressLabel">Edistyminen: <span id="answersOk"></span>/5 </p>
+      <progress class="progress" id="progressBar" value="0" max="5"></progress>
     </div>
     <!-- bootstrap script below-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" 
     crossorigin="anonymous">
-    </script>     
+    </script> 
+    <!-- common footer with main page below, added my own page information --> 
+    <div class="row">
+      <div class="col-md-12">
+          <footer>
+              <p>TIK22KM: Anni Tonttila, Jesse Ryynälä, Mikael Rekinen & Päivi Karhumaa (c) 2022 
+                <br> / Eläintieto: P. Karhumaa 2022 (TIK22KM), n1kapa00@students.oamk.fi </p>
+          </footer>
+      </div>
+    </div>
   </body>
 </html>

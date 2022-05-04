@@ -1,11 +1,10 @@
 // the feedback- sentences
-const OIKEA1 = "Oikea vastaus, hyvä! Kettu on monista kansansaduistakin tuttu petoeläin, jonka tunnistaa punertavasta väristä. "
-const OIKEA2 = "Oikea vastaus, hyvä! Tiesitkö, että Suomessa karhut nukkuvat talviunta, joka saattaa kestää melkein puoli vuotta!"
-const OIKEA3 = "Oikea vastaus, hyvä! Orava kiipeilee puunrungolla taitavasti. Sen lempiruokaa ovat siemenet. "
-const OIKEA4 = "Oikea vastaus, hyvä! Ilves on yksi laajimmalle levinneistä kissaeläimistä. "
-const OIKEA5 = "Oikea vastaus, hyvä! Tiesitkö, että jäniksiä on maailmassa 11 sukua ja jäniksiin kuuluvia lajeja on 61! "
-const VÄÄRÄ = "Väärä vastaus, harmi! Kokeile uudelleen."
-//const PUUTTUU = "Vastaus puuttuu, kirjoita vastaus kuvan alla olevaan kenttään."
+const OIKEA1 = "Oikea vastaus, hyvä! Kettu on monista kansansaduistakin tuttu petoeläin. Sen tunnistaa punaruskeasta väristä.";
+const OIKEA2 = "Oikea vastaus, hyvä! Tiesitkö, että Suomessa karhut nukkuvat talviunta melkein puoli vuotta!";
+const OIKEA3 = "Oikea vastaus, hyvä! Orava kiipeilee puunrungolla taitavasti tasapainotellen. Sen lempiruokaa ovat siemenet.";
+const OIKEA4 = "Oikea vastaus, hyvä! Ilves on yksi laajimmalle levinneistä kissaeläimistä. ";
+const OIKEA5 = "Oikea vastaus, hyvä! Tiesitkö, että jäniksiä on maailmassa 11 sukua ja jäniksiin kuuluvia lajeja on 61! ";
+const VÄÄRÄ = "Väärä vastaus, harmi! Kokeile uudelleen.";
 
 
 // answers right or wrong
@@ -14,7 +13,6 @@ let right2 = document.getElementById("right2");
 let right3 = document.getElementById("right3");
 let right4 = document.getElementById("right4");
 let right5 = document.getElementById("right5");
-let wrong = document.getElementsByClassName("wrong");
 
 //printing elements for the feedback
 let feedback1 = document.getElementById("feedback1");
@@ -42,7 +40,6 @@ function start() {
 //question 1 actions
 function v1(){
     feedback1.textContent = ""; //to empty the previous feedback
-
     //if the correct answer is checked, give congratulations and next-button, 
     //hide the check-button and grow the progress-bar & informed progress amount
     if (right1.checked == true){feedback1.textContent = OIKEA1;
@@ -53,13 +50,14 @@ function v1(){
         document.getElementById("answersOk").innerText = rightAnswers;  
         progressBar.value = rightAnswers;
     }
-    //if wrong answer is checked, give sorry feedback
+    //if wrong answer or no answer is checked, give sorry feedback
     else {feedback1.textContent = VÄÄRÄ;}
-        document.getElementById("seuraava2").onclick = function(){
+
+    document.getElementById("seuraava2").onclick = function(){
         document.getElementById("kettu").style.display ="none";
         document.getElementById("karhu").style.display ="block";
         document.getElementById("seuraava3").style.display = "none";
-    }
+    };
 }
 //question 2 actions
 function v2(){
@@ -79,7 +77,7 @@ function v2(){
         document.getElementById("karhu").style.display ="none";
         document.getElementById("orava").style.display ="block";
         document.getElementById("seuraava4").style.display = "none";
-    }
+    };
 }
 //question 3 actions
 function v3(){
@@ -98,7 +96,7 @@ function v3(){
         document.getElementById("orava").style.display ="none";
         document.getElementById("ilves").style.display ="block";
         document.getElementById("seuraava5").style.display = "none";
-    }
+    };
 } 
 //question 4 actions
 function v4(){
@@ -117,7 +115,7 @@ function v4(){
     document.getElementById("ilves").style.display ="none";
     document.getElementById("jänis").style.display ="block";
     document.getElementById("tulos").style.display = "none";
-    }
+    };
 }
 //question 5 actions
 function v5(){
@@ -135,10 +133,12 @@ function v5(){
     document.getElementById("tulos").onclick = function(){
         document.getElementById("jänis").style.display ="none";
         document.getElementById("prize").style.display ="block";
-    }    
+        progressBar.style.display = "none"; 
+        progressLabel.style.display = "none";
+    };   
 
     document.getElementById("uudestaan").onclick = function(){
         feedback1.textContent = "";   
         location.reload(); //w3schools reload the page
-        }
+        };
 }
